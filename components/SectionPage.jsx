@@ -90,6 +90,8 @@ export default function SectionPage({ topics, accentColor = "blue" }) {
                     <span className={`flex h-8 w-8 items-center justify-center rounded-lg text-xs font-bold ${
                       accentColor === "purple"
                         ? "bg-purple-500/15 text-purple-400"
+                        : accentColor === "green"
+                        ? "bg-green-500/15 text-green-400"
                         : "bg-blue-500/15 text-blue-400"
                     }`}>
                       {topic.icon}

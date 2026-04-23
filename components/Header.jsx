@@ -48,6 +48,36 @@ export default function Header({ onMenuToggle, showMenuButton }) {
           >
             Full Stack
           </Link>
+          <Link
+            href="/dsa"
+            className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${
+              pathname === "/dsa"
+                ? "bg-emerald-500/20 text-emerald-400 shadow-sm shadow-emerald-500/10"
+                : "text-slate-400 hover:bg-slate-800 hover:text-white"
+            }`}
+          >
+            DSA
+          </Link>
+          <Link
+            href="/projects"
+            className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${
+              pathname === "/projects"
+                ? "bg-amber-500/20 text-amber-400 shadow-sm shadow-amber-500/10"
+                : "text-slate-400 hover:bg-slate-800 hover:text-white"
+            }`}
+          >
+            Projects
+          </Link>
+          <Link
+            href="/android"
+            className={`rounded-lg px-4 py-2 text-sm font-medium transition-all ${
+              pathname === "/android"
+                ? "bg-green-500/20 text-green-400 shadow-sm shadow-green-500/10"
+                : "text-slate-400 hover:bg-slate-800 hover:text-white"
+            }`}
+          >
+            Android
+          </Link>
         </nav>
       </div>
     </header>

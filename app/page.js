@@ -33,7 +33,7 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Two Cards */}
+        {/* Three Cards */}
         <div className="grid gap-6 sm:grid-cols-2">
           {/* Frontend Card */}
           <Link href="/frontend" className="group relative">
@@ -96,6 +96,110 @@ export default function Home() {
                   <span className="text-white font-semibold">12</span> topics &middot; <span className="text-white font-semibold">100+</span> questions
                 </div>
                 <span className="flex items-center gap-1 text-sm font-medium text-purple-400 transition group-hover:gap-2">
+                  Start Prep
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </Link>
+          {/* DSA Card */}
+          <Link href="/dsa" className="group relative">
+            <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-500 opacity-20 blur transition group-hover:opacity-40" />
+            <div className="relative flex flex-col rounded-2xl border border-slate-700/50 bg-slate-800/50 p-8 transition-all group-hover:border-emerald-500/30 group-hover:bg-slate-800/80">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/10 text-2xl">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                  <path d="M2 17l10 5 10-5" />
+                  <path d="M2 12l10 5 10-5" />
+                </svg>
+              </div>
+              <h2 className="mb-2 text-2xl font-bold text-white">DSA</h2>
+              <p className="mb-6 text-sm leading-relaxed text-slate-400">
+                Data Structures & Algorithms — categorized by company type with brute, better & optimal approaches
+              </p>
+              <div className="mb-6 flex flex-wrap gap-2">
+                {["Arrays", "Trees", "Graphs", "DP", "Stacks", "Linked Lists", "Sorting", "Sliding Window"].map((t) => (
+                  <span key={t} className="rounded-md bg-emerald-500/10 px-2.5 py-1 text-xs font-medium text-emerald-400">
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <div className="mt-auto flex items-center justify-between">
+                <div className="text-sm text-slate-500">
+                  <span className="text-white font-semibold">4</span> tiers &middot; <span className="text-white font-semibold">16</span> topics &middot; <span className="text-white font-semibold">200+</span> questions
+                </div>
+                <span className="flex items-center gap-1 text-sm font-medium text-emerald-400 transition group-hover:gap-2">
+                  Start Prep
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          {/* Projects Card */}
+          <Link href="/projects" className="group relative">
+            <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-500 opacity-20 blur transition group-hover:opacity-40" />
+            <div className="relative flex flex-col rounded-2xl border border-slate-700/50 bg-slate-800/50 p-8 transition-all group-hover:border-amber-500/30 group-hover:bg-slate-800/80">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-500/10 text-2xl">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                </svg>
+              </div>
+              <h2 className="mb-2 text-2xl font-bold text-white">Projects</h2>
+              <p className="mb-6 text-sm leading-relaxed text-slate-400">
+                Deep-dive into Marketplace, Food Delivery & Chat App — architecture, decisions, challenges & interview stories
+              </p>
+              <div className="mb-6 flex flex-wrap gap-2">
+                {["Marketplace", "Food Delivery", "Chat App", "Architecture", "Challenges", "Stories"].map((t) => (
+                  <span key={t} className="rounded-md bg-amber-500/10 px-2.5 py-1 text-xs font-medium text-amber-400">
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <div className="mt-auto flex items-center justify-between">
+                <div className="text-sm text-slate-500">
+                  <span className="text-white font-semibold">3</span> projects &middot; <span className="text-white font-semibold">2</span> interview modes
+                </div>
+                <span className="flex items-center gap-1 text-sm font-medium text-amber-400 transition group-hover:gap-2">
+                  Start Prep
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M5 12h14M12 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          {/* Android Card */}
+          <Link href="/android" className="group relative sm:col-span-2">
+            <div className="absolute -inset-0.5 rounded-2xl bg-gradient-to-r from-green-500 to-lime-500 opacity-20 blur transition group-hover:opacity-40" />
+            <div className="relative flex flex-col rounded-2xl border border-slate-700/50 bg-slate-800/50 p-8 transition-all group-hover:border-green-500/30 group-hover:bg-slate-800/80">
+              <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-green-500/10 text-2xl">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                  <path d="M12 18h.01" />
+                </svg>
+              </div>
+              <h2 className="mb-2 text-2xl font-bold text-white">Android</h2>
+              <p className="mb-6 text-sm leading-relaxed text-slate-400">
+                Kotlin, Jetpack Compose, MVVM, Coroutines, Room, Hilt, Navigation — from basics to internal workings
+              </p>
+              <div className="mb-6 flex flex-wrap gap-2">
+                {["Kotlin", "Jetpack Compose", "Coroutines", "MVVM", "Room", "Hilt", "Navigation", "Retrofit"].map((t) => (
+                  <span key={t} className="rounded-md bg-green-500/10 px-2.5 py-1 text-xs font-medium text-green-400">
+                    {t}
+                  </span>
+                ))}
+              </div>
+              <div className="mt-auto flex items-center justify-between">
+                <div className="text-sm text-slate-500">
+                  <span className="text-white font-semibold">12</span> topics &middot; <span className="text-white font-semibold">120+</span> questions
+                </div>
+                <span className="flex items-center gap-1 text-sm font-medium text-green-400 transition group-hover:gap-2">
                   Start Prep
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M5 12h14M12 5l7 7-7 7" />

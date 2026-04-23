@@ -71,3 +71,20 @@ body {
 .code-block .comment { color: #8b949e; }
 .code-block .function { color: #d2a8ff; }
 .code-block .number { color: #79c0ff; }
+
+/* DSA tier tab transitions */
+.tier-tab-enter {
+  animation: fadeSlideIn 0.2s ease;
+}
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Code syntax in pre blocks */
+pre code {
+  font-family: var(--font-geist-mono), 'Fira Code', ui-monospace, monospace;
+  font-size: 13px;
+  line-height: 1.7;
+  tab-size: 2;
+}
